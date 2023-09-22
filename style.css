@@ -1,0 +1,56 @@
+/* Gaya umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Tampilan desktop */
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        margin-top: 0;
+    }
+
+    section {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+/* Tampilan ponsel */
+@media (max-width: 767px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
